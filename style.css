@@ -1,0 +1,123 @@
+
+.roboto-font {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    background: #F0EAD6;
+}
+
+h3, h5, h6{
+    font-weight: 300;
+}
+p{
+    margin: 1.5em 0em 1.5em 0em;
+    font-size: 1.5em;
+}
+
+span{
+    color: #a08700;
+    font-weight: 900;
+}
+
+.first-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.first-part-text{
+    width: 40%;
+}
+
+.img-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+img{
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+}
+
+figcaption{
+    width: 50%;
+    font-size: 12px;
+}
+
+.second-part{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.second-part-content{
+    width: 40%;
+}
+.second-part-content img, figcaption{
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+    .first-part-text, 
+    .second-part-content, 
+    img,
+    figcaption{
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .first-part-text, 
+    .second-part-content, 
+    img, 
+    figcaption{
+        width: 80%;
+    }
+    h1{
+        font-size: 4.5em;
+    }
+    h3{
+        font-size: 2em;
+    }
+    h5, h6{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .first-part-text,
+    .second-part-content,
+    img,
+    figcaption{
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .first-part-text,
+    .second-part-content,
+    img,
+    figcaption{
+        width: 60%;
+    }
+
+    .second-part-content figcaption {
+        width: 100%;
+    }
+}
